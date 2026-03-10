@@ -1,15 +1,17 @@
-import ultralytics
-import torch
-import streamlit as st
-
-st.write("Ultralytics version:", ultralytics.__version__)
-st.write("Torch version:", torch.__version__)
-
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
+import ultralytics
+import torch
 
+st.set_page_config(page_title="Apple Leaf Disease Segmentation", layout="wide")
+
+st.write("Ultralytics version:", ultralytics.__version__)
+st.write("Torch version:", torch.__version__)
+
+st.title("Apple Leaf Disease Segmentation")
+st.write("Upload an image and run YOLOv12 segmentation on the leaf.")
 st.set_page_config(page_title="Apple Leaf Disease Segmentation", layout="wide")
 
 st.title("Apple Leaf Disease Segmentation")
