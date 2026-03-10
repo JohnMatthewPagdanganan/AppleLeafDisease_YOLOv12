@@ -1,3 +1,10 @@
+import ultralytics
+import torch
+import streamlit as st
+
+st.write("Ultralytics version:", ultralytics.__version__)
+st.write("Torch version:", torch.__version__)
+
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
