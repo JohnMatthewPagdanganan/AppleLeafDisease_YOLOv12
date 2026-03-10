@@ -12,10 +12,6 @@ st.write("Torch version:", torch.__version__)
 
 st.title("Apple Leaf Disease Segmentation")
 st.write("Upload an image and run YOLOv12 segmentation on the leaf.")
-st.set_page_config(page_title="Apple Leaf Disease Segmentation", layout="wide")
-
-st.title("Apple Leaf Disease Segmentation")
-st.write("Upload an image and run YOLOv12 segmentation on the leaf.")
 
 @st.cache_resource
 def load_model():
